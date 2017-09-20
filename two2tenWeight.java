@@ -48,9 +48,11 @@ public class two2tenWeight{
 		String bin1 = "110111";
 		String bin2 = "111";
 		String bin3 = "101.11";
+		String bin4 = "0.0";
 		two2tenWeight tt = new two2tenWeight();
 		System.out.println(tt.bin2dec(bin1));
 		System.out.println(tt.bin2dec(bin2));
 		System.out.println(tt.bin2dec(bin3));
+		System.out.println(tt.bin2dec(bin4));
 	}
 }
