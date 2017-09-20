@@ -33,13 +33,11 @@ public class ten2twoWeight{
 	}
 
 	public String integerSum(){
+
 		String result = "";
-
-		if( integer.equals("0"))
-			return "0";
-
 		Double number = Double.parseDouble(integer);
 		int count = getMaxnum(number);
+
 		while(count != -1){
 			if( number - getPow(count) >= 0 ){
 				result += "1";
@@ -62,11 +60,8 @@ public class ten2twoWeight{
 	}
 
 	public String fractionalSum(){
-		String result = "";
-		
-		if(fractional.length() == 0 )
-			return "0";
 
+		String result = "";
 		fractional = "0." + fractional;
 		double number = Double.parseDouble(fractional);
 		int count = getMinNum(number);
@@ -86,13 +81,18 @@ public class ten2twoWeight{
 	public String dec2bin(String str){
 		this.input(str);
 		this.string2arr();
-		return this.integerSum() + "." + this.fractionalSum();
+		if(fractional.length() == 0)
+			return this.integerSum();
+		else if(integer.equals("0"))
+			return "0." + this.fractionalSum();
+		else
+			return this.integerSum() + "." + this.fractionalSum();
 	}
 
 	public static void main(String args[]){
 		ten2twoWeight tt = new ten2twoWeight();
 		String dec1 = "116";
-		String dec2 = "0.635";
+		String dec2 = "0.0";
 		String dec3 = "116.635";
 		String dec4 = "3.635";
 		System.out.println(tt.dec2bin(dec1));
