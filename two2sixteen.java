@@ -1,5 +1,4 @@
 
-
 public class two2sixteen{
 
 	String integer = "";
