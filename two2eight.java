@@ -39,12 +39,12 @@ public class two2eight{
 
 	public String binary2oct(String str){
 
-		String hex = "";
+		String oct = "";
 
-		for (int i = 0 ; i < str.length() / 3 ; i += 3) {
-			hex += Integer.parseInt(str.substring(i , i + 3),2) + "";
+		for (int i = 0 ; i < str.length() ; i += 3) {
+			oct += Integer.parseInt(str.substring(i , i + 3),2) + "";
 		}
-		return hex;
+		return oct;
 	}
 
 	public String bin2oct(String str){
@@ -59,7 +59,7 @@ public class two2eight{
 		String bin1 = "100.001";
 		String bin2 = "11";
 		String bin3 = "0.10";
-		String bin4 = "10.101";
+		String bin4 = "001110.101";
 
 		two2eight te = new two2eight();
 

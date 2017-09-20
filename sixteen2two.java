@@ -69,7 +69,7 @@ public class sixteen2two{
 
 		String hex1 = "a.Ab";
 		String hex2 = "B";
-		String hex3 = "7A";
+		String hex3 = "7A.3";
 
 		sixteen2two st = new sixteen2two();
 		System.out.println(st.hex2bin(hex1));
