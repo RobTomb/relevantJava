@@ -57,7 +57,8 @@ public class sixteen2two{
  		return result;
  	}
 
- 	public String hex2bin(){
+ 	public String hex2bin(String str){
+ 		this.input(str);
  		this.string2arr();
  		this.char2num();
  		this.hex2binary();
@@ -71,8 +72,9 @@ public class sixteen2two{
 		String hex3 = "7A";
 
 		sixteen2two st = new sixteen2two();
-		st.input(hex1);
-		System.out.println(st.hex2bin());
+		System.out.println(st.hex2bin(hex1));
+		System.out.println(st.hex2bin(hex2));
+		System.out.println(st.hex2bin(hex3));
 	}
 
 }

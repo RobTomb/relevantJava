@@ -44,7 +44,8 @@ public class eight2two{
 		return result;
 	}
 
-	public String oct2bin(){
+	public String oct2bin(String str){
+		this.input(str);
 		this.string2arr();
 		this.oct2binary();
 		return this.arr2string();
@@ -55,7 +56,8 @@ public class eight2two{
 		String oct2 = "123";
 		String oct3 = "0.123";
 		eight2two et = new eight2two();
-		et.input(oct3);
-		System.out.println(et.oct2bin());
+		System.out.println(et.oct2bin(oct1));
+		System.out.println(et.oct2bin(oct2));
+		System.out.println(et.oct2bin(oct3));
 	}
 }
