@@ -9,7 +9,7 @@ public class two2tenWeight{
 
 	}
 
-	public void input(String str){
+	public void inputStr(String str){
 		code = str;
 	}
 
@@ -38,8 +38,8 @@ public class two2tenWeight{
 		return sum;
 	}
 
-	public String bin2dec(String str){
-		this.input(str);
+	public String input(String str){
+		this.inputStr(str);
 		this.string2arr();
 		return Double.toString(integerSum() + fractionalSum());
 	}
@@ -50,9 +50,9 @@ public class two2tenWeight{
 		String bin3 = "101.11";
 		String bin4 = "0.0";
 		two2tenWeight tt = new two2tenWeight();
-		System.out.println(tt.bin2dec(bin1));
-		System.out.println(tt.bin2dec(bin2));
-		System.out.println(tt.bin2dec(bin3));
-		System.out.println(tt.bin2dec(bin4));
+		System.out.println(tt.input(bin1));
+		System.out.println(tt.input(bin2));
+		System.out.println(tt.input(bin3));
+		System.out.println(tt.input(bin4));
 	}
 }

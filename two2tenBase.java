@@ -9,7 +9,7 @@ public class two2tenBase{
 
 	}
 
-	public void input(String str){
+	public void inputStr(String str){
 		code = str;
 	}
 
@@ -47,8 +47,8 @@ public class two2tenBase{
 		return sum*0.5;
 	}
 
-	public String bin2dec(String str){
-		this.input(str);
+	public String input(String str){
+		this.inputStr(str);
 		this.string2arr();
 		return Double.toString(this.multiply() + this.dividedSum());
 	}
@@ -58,9 +58,9 @@ public class two2tenBase{
 		String bin3 = "1.1";
 		String bin4 = "0.1";
 		two2tenBase tt = new two2tenBase();
-		System.out.println(tt.bin2dec(bin1));
-		System.out.println(tt.bin2dec(bin2));
-		System.out.println(tt.bin2dec(bin3));
-		System.out.println(tt.bin2dec(bin4));
+		System.out.println(tt.input(bin1));
+		System.out.println(tt.input(bin2));
+		System.out.println(tt.input(bin3));
+		System.out.println(tt.input(bin4));
 	}
 }
