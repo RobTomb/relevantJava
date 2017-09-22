@@ -10,7 +10,7 @@ public class ten2twoBase {
 
 	}
 
-	public void input(String str){
+	public void inputStr(String str){
 		code = str;
 	}
 
@@ -46,8 +46,8 @@ public class ten2twoBase {
 		return result;
 	}
 
-	public String dec2bin(String str){
-		this.input(str);
+	public String input(String str){
+		this.inputStr(str);
 		this.string2arr();
 		return this.integerSum() + "." + this.fractionalSum();
 	}
@@ -57,8 +57,8 @@ public class ten2twoBase {
 		String ten1 = "116";
 		String ten2 = "0.625";
 		String ten3 = "116.625";
-		System.out.println(ttb.dec2bin(ten1));
-		System.out.println(ttb.dec2bin(ten2));
-		System.out.println(ttb.dec2bin(ten3));
+		System.out.println(ttb.input(ten1));
+		System.out.println(ttb.input(ten2));
+		System.out.println(ttb.input(ten3));
 	}
 }

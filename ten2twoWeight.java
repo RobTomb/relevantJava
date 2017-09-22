@@ -9,7 +9,7 @@ public class ten2twoWeight{
 
 	}
 
-	public void input(String str){
+	public void inputStr(String str){
 		code = str;
 	}
 
@@ -78,8 +78,8 @@ public class ten2twoWeight{
 		return result;
 	}
 
-	public String dec2bin(String str){
-		this.input(str);
+	public String input(String str){
+		this.inputStr(str);
 		this.string2arr();
 		if(fractional.length() == 0)
 			return this.integerSum();
@@ -95,9 +95,9 @@ public class ten2twoWeight{
 		String dec2 = "0.0";
 		String dec3 = "116.635";
 		String dec4 = "3.635";
-		System.out.println(tt.dec2bin(dec1));
-		System.out.println(tt.dec2bin(dec2));
-		System.out.println(tt.dec2bin(dec3));
-		System.out.println(tt.dec2bin(dec4));
+		System.out.println(tt.input(dec1));
+		System.out.println(tt.input(dec2));
+		System.out.println(tt.input(dec3));
+		System.out.println(tt.input(dec4));
 	}
 }

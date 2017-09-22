@@ -9,7 +9,7 @@ public class two2eight{
 
 	}
 
-	public void input(String str){
+	public void inputStr(String str){
 		code = str;
 	}
 
@@ -47,8 +47,8 @@ public class two2eight{
 		return oct;
 	}
 
-	public String bin2oct(String str){
-		this.input(str);
+	public String input(String str){
+		this.inputStr(str);
 		this.str2arr();
 		this.zeroFill();
 		this.fillZero();
@@ -63,10 +63,10 @@ public class two2eight{
 
 		two2eight te = new two2eight();
 
-		System.out.println( te.bin2oct(bin1));
-		System.out.println( te.bin2oct(bin2));
-		System.out.println( te.bin2oct(bin3));
-		System.out.println( te.bin2oct(bin4));
+		System.out.println( te.input(bin1));
+		System.out.println( te.input(bin2));
+		System.out.println( te.input(bin3));
+		System.out.println( te.input(bin4));
 		
 	}
 

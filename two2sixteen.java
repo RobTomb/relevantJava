@@ -9,7 +9,7 @@ public class two2sixteen{
 
 	}
 
-	public void input(String str){
+	public void inputStr(String str){
 		code = str;
 	}
 
@@ -58,8 +58,8 @@ public class two2sixteen{
 
 	}
 
-	public String bin2hex(String str){
-		this.input(str);
+	public String input(String str){
+		this.inputStr(str);
 		this.string2arr();
 		this.zerofill();
 		this.fillzero();
@@ -72,9 +72,9 @@ public class two2sixteen{
 		String bin2 = "1010";
 		String bin3 = "011010.01";
 		String bin4 = "011010.010101";
-		System.out.println(ts.bin2hex(bin1));
-		System.out.println(ts.bin2hex(bin2));
-		System.out.println(ts.bin2hex(bin3));
-		System.out.println(ts.bin2hex(bin4));
+		System.out.println(ts.input(bin1));
+		System.out.println(ts.input(bin2));
+		System.out.println(ts.input(bin3));
+		System.out.println(ts.input(bin4));
 	}
 }
