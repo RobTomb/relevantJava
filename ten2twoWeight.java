@@ -26,10 +26,10 @@ public class ten2twoWeight{
 	public int getMaxnum(double num){
 		double maxNum = 0;
 		int i = 0;
-		for ( ; maxNum * 2 < num ; i++) {
+		for ( ; maxNum * 2 <= num ; i++) {
 			maxNum = getPow(i);
 		}
-		return i-1;
+		return i - 1;
 	}
 
 	public String integerSum(){
@@ -37,7 +37,7 @@ public class ten2twoWeight{
 		String result = "";
 		Double number = Double.parseDouble(integer);
 		int count = getMaxnum(number);
-
+		
 		while(count != -1){
 			if( number - getPow(count) >= 0 ){
 				result += "1";
@@ -91,13 +91,13 @@ public class ten2twoWeight{
 
 	public static void main(String args[]){
 		ten2twoWeight tt = new ten2twoWeight();
-		String dec1 = "116";
+		String dec1 = "4";
 		String dec2 = "0.0";
 		String dec3 = "116.635";
 		String dec4 = "3.635";
 		System.out.println(tt.input(dec1));
-		System.out.println(tt.input(dec2));
-		System.out.println(tt.input(dec3));
-		System.out.println(tt.input(dec4));
+		// System.out.println(tt.input(dec2));
+		// System.out.println(tt.input(dec3));
+		// System.out.println(tt.input(dec4));
 	}
 }
